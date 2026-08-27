@@ -1,0 +1,8 @@
+aws_region      = "ap-northeast-2" # EC2/RDS는 서울 리전
+bedrock_region  = "us-east-1"      # Bedrock 모델(us. 크로스리전 프로파일) 호출은 계속 미국 리전으로
+project_name    = "kfood-lens"
+instance_type   = "t3.micro"
+frontend_origin = "https://your-frontend-domain.com"
+
+# 필요할 때만 임시로 열고, 확인 후에는 다시 null로 되돌리는 걸 권장
+# extra_ssh_cidr = "1.2.3.4/32"

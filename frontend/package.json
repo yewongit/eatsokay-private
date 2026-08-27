@@ -1,0 +1,15 @@
+{
+  "name": "kfood-lens",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "web:dev": "npm run dev --workspace apps/web",
+    "web:build": "npm run build --workspace apps/web",
+    "web:start": "npm run start --workspace apps/web",
+    "web:check": "npm run check --workspace apps/web",
+    "web:test": "npm run test --workspace apps/web"
+  }
+}

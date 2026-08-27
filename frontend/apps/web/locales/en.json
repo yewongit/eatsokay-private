@@ -1,0 +1,168 @@
+{
+  "common": {
+    "appName": "K-Food Lens",
+    "close": "Close",
+    "cancel": "Cancel",
+    "retry": "Try again",
+    "loading": "Loading...",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "safety": {
+    "noticeTitle": "Always confirm at the restaurant",
+    "notice": "These results are for reference only. Ingredients vary by restaurant and by how the dish is cooked. This app never tells you a dish is safe. Confirm with the staff before you eat."
+  },
+  "onboarding": {
+    "title": "Photograph a menu, see the allergy risks",
+    "subtitle": "Take a photo of a Korean restaurant menu to check ingredients and allergens.",
+    "step1Title": "Photograph the menu",
+    "step1Body": "Take a photo of the menu with your camera.",
+    "step2Title": "Check the ingredients",
+    "step2Body": "See the ingredients and allergens for each dish.",
+    "step3Title": "Ask the staff",
+    "step3Body": "Show the question card to the staff and confirm before you eat.",
+    "limitTitle": "Before you start",
+    "limitBody": "This app never marks a dish as safe. It only separates dishes that may be dangerous from dishes you still need to check.",
+    "consentTitle": "Consent",
+    "consentAnalysis": "I agree that the menu photo I take will be sent to the server for analysis. The image is not kept after analysis.",
+    "consentLimit": "I understand these results are not medical advice and that I must confirm with the restaurant staff before eating.",
+    "start": "Get started",
+    "consentRequired": "You need to agree to both items to continue."
+  },
+  "profile": {
+    "title": "My allergies",
+    "subtitle": "Your selection is stored only on this device and is never sent to a server for storage.",
+    "standardTitle": "22 standard allergens",
+    "standardHint": "Select everything that applies to you.",
+    "searchPlaceholder": "Search allergens (e.g. soybean, 대두)",
+    "searchEmpty": "No matching allergens.",
+    "selectedCount": "{count} selected",
+    "customTitle": "Other allergy keywords",
+    "customHint": "Add ingredients that are not in the 22 standard allergens. Even if the system cannot match them, they still appear on the question card.",
+    "customPlaceholder": "e.g. sesame oil",
+    "customAdd": "Add",
+    "customEmpty": "No keywords added yet.",
+    "customRemove": "Remove {keyword}",
+    "customLimit": "You can add up to {max} keywords.",
+    "retentionTitle": "Keep for",
+    "retentionHint": "Your saved allergy settings are deleted automatically after this period.",
+    "retentionValue": "{days} days",
+    "save": "Save and open camera",
+    "clear": "Delete saved settings",
+    "cleared": "Saved allergy settings were deleted.",
+    "emptyWarning": "You have not selected any allergies. Every dish will be shown as \"Needs check\", and the question card will only ask about ingredients.",
+    "loadFailed": "Could not load the allergen list."
+  },
+  "scan": {
+    "title": "Photograph the menu",
+    "myProfile": "My allergies",
+    "standardLabel": "Standard",
+    "customLabel": "Other",
+    "standardValue": "{count} selected",
+    "noneSelected": "None selected",
+    "remaining": "{days} days left",
+    "editProfile": "Edit allergies",
+    "guideTitle": "Fit the whole menu in the frame",
+    "guideTip1": "Line the menu up inside the rectangular guide.",
+    "guideTip2": "Avoid glare and camera shake.",
+    "guideTip3": "Check that the text looks sharp.",
+    "capture": "Photograph the menu",
+    "recapture": "Take another photo",
+    "cameraOnlyHint": "The photo is used only for analysis and is not stored on your device.",
+    "analyzing": "Analyzing the menu",
+    "analyzingHint": "Reading the dish names and checking ingredients. This can take up to a minute.",
+    "desktopHint": "On a desktop browser this opens a file picker instead of the camera. Test on a mobile device."
+  },
+  "result": {
+    "title": "Results",
+    "menuCount": "Found {count} dishes",
+    "myAllergies": "My allergies",
+    "myAllergiesNone": "No allergies selected. Every dish is shown as \"Needs check\".",
+    "empty": "No dishes found",
+    "emptyHint": "Take another photo with the whole menu in frame.",
+    "rescan": "Photograph another menu",
+    "editProfile": "Edit allergies",
+    "noResult": "No results to show. Please photograph a menu again."
+  },
+  "menu": {
+    "statusDanger": "Danger",
+    "statusNeedsCheck": "Needs check",
+    "statusDangerHint": "Contains an ingredient that matches your allergies.",
+    "statusNeedsCheckHint": "No matching ingredient was found, but that does not mean it is safe. Confirm with the staff.",
+    "conflictTitle": "Matches your allergies",
+    "conflictBecause": "Because of",
+    "ingredientsTitle": "Ingredients",
+    "ingredientsEmpty": "No ingredient information was found. Please confirm with the staff.",
+    "detectedTitle": "Allergens detected",
+    "detectedEmpty": "No allergens detected. That does not mean it is safe.",
+    "sourceTitle": "Data source",
+    "sourceOfficial": "Based on a standard recipe",
+    "sourceAiGenerated": "AI estimate",
+    "noticeTitle": "Note",
+    "showToStaff": "Show to staff"
+  },
+  "questionCard": {
+    "title": "Screen to show the staff",
+    "langKo": "한국어",
+    "langEn": "English",
+    "brightnessHint": "Turn your screen brightness up before showing this to the staff.",
+    "close": "Close",
+    "opened": "Question card opened."
+  },
+  "errors": {
+    "INVALID_IMAGE_OR_NOT_MENU": {
+      "title": "We could not read the menu",
+      "message": "Avoid glare and camera shake, and line the menu up inside the guide.",
+      "action": "Take another photo"
+    },
+    "UNSUPPORTED_MEDIA_TYPE": {
+      "title": "Unsupported file type",
+      "message": "Only JPEG, PNG, WEBP and HEIC images can be analyzed. Please take another photo.",
+      "action": "Take another photo"
+    },
+    "IMAGE_TOO_LARGE": {
+      "title": "The image is too large",
+      "message": "Please take another photo under 10MB.",
+      "action": "Take another photo"
+    },
+    "INVALID_ALLERGY_ID": {
+      "title": "Please set your allergies again",
+      "message": "Your saved allergy settings no longer match the server.",
+      "action": "Go to allergy settings"
+    },
+    "AI_TIMEOUT": {
+      "title": "Analysis is taking too long",
+      "message": "Please try again in a moment.",
+      "action": "Take another photo"
+    },
+    "AI_PROVIDER_ERROR": {
+      "title": "Analysis failed",
+      "message": "Please try again in a moment.",
+      "action": "Take another photo"
+    },
+    "RATE_LIMITED": {
+      "title": "Too many requests",
+      "message": "Please wait a moment and try again.",
+      "action": "Take another photo"
+    },
+    "NETWORK": {
+      "title": "Cannot reach the network",
+      "message": "Check your internet connection and try again.",
+      "action": "Take another photo"
+    },
+    "TIMEOUT": {
+      "title": "The request timed out",
+      "message": "Check your connection and take another photo.",
+      "action": "Take another photo"
+    },
+    "UNKNOWN": {
+      "title": "Something went wrong",
+      "message": "Please try again in a moment.",
+      "action": "Take another photo"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "home": "Back to start"
+  }
+}

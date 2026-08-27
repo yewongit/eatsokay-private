@@ -1,0 +1,8 @@
+# K-Food Lens와 무관한 별도 프로젝트라 이 저장소에는 포함하지 않음
+/aws_project_final/
+
+# OS/에디터 노이즈
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

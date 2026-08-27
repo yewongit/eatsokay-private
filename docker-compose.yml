@@ -1,0 +1,62 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: kfood-lens-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: kfood_lens
+    ports:
+      - '5432:5432'
+    volumes:
+      - kfood_lens_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: kfood-lens-backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      DB_HOST: postgres
+      CHOKIDAR_USEPOLLING: 'true'
+    ports:
+      - '3000:3000'
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend/src:/app/src
+      - /app/node_modules
+      # import-recipes.ts(레시피 시드)가 PROJECT_ROOT를 컨테이너 기준 "/"로 계산하므로 그 경로에 맞춰 마운트
+      - ./레시피_기본정보_50선.csv:/레시피_기본정보_50선.csv:ro
+      - ./레시피_재료정보_50선.csv:/레시피_재료정보_50선.csv:ro
+
+  frontend:
+    build: ./frontend
+    container_name: kfood-lens-frontend
+    restart: unless-stopped
+    environment:
+      # 브라우저(호스트)에서 직접 호출하므로 호스트에 노출된 backend 포트를 가리켜야 한다
+      # (컨테이너 내부 네트워크 이름 "backend"는 브라우저에서 resolve 되지 않음)
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:3000
+      CHOKIDAR_USEPOLLING: 'true'
+      WATCHPACK_POLLING: 'true'
+    ports:
+      - '3001:3001'
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend/apps:/app/apps
+      - /app/node_modules
+      - /app/apps/web/node_modules
+      - /app/apps/web/.next
+
+volumes:
+  kfood_lens_pg_data:

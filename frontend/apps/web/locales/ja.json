@@ -1,0 +1,168 @@
+{
+  "common": {
+    "appName": "K-Food Lens",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "retry": "再試行",
+    "loading": "読み込み中...",
+    "language": "言語",
+    "skipToContent": "本文へスキップ"
+  },
+  "safety": {
+    "noticeTitle": "必ず店舗で確認してください",
+    "notice": "この結果は参考情報です。同じ料理でも店舗や調理法によって材料が異なります。このアプリは料理を「安全」と判定しません。食べる前に店員に直接確認してください。"
+  },
+  "onboarding": {
+    "title": "メニューを撮影してアレルギーの危険を確認",
+    "subtitle": "韓国の飲食店のメニューを撮影すると、材料とアレルギー物質を確認できます。",
+    "step1Title": "メニューを撮影",
+    "step1Body": "カメラでメニューを撮影します。",
+    "step2Title": "材料を確認",
+    "step2Body": "料理ごとの材料とアレルギー物質を表示します。",
+    "step3Title": "店員に質問",
+    "step3Body": "質問カードを店員に見せて最終確認してください。",
+    "limitTitle": "はじめに",
+    "limitBody": "このアプリは「安全」判定を行いません。危険な可能性のある料理と、確認が必要な料理を区別してお知らせするだけです。",
+    "consentTitle": "利用開始前の同意",
+    "consentAnalysis": "撮影したメニュー画像が分析のためサーバーに送信されることに同意します。画像は分析後に保存されません。",
+    "consentLimit": "この結果は医学的助言ではなく、食べる前に店員に直接確認する必要があることを理解しました。",
+    "start": "はじめる",
+    "consentRequired": "2つの項目すべてに同意が必要です。"
+  },
+  "profile": {
+    "title": "アレルギー設定",
+    "subtitle": "選択した内容はこの端末にのみ保存され、サーバーには保存されません。",
+    "standardTitle": "標準アレルギー22種",
+    "standardHint": "該当する項目をすべて選択してください。",
+    "searchPlaceholder": "アレルギーを検索（例: 大豆, soybean）",
+    "searchEmpty": "検索結果がありません。",
+    "selectedCount": "{count}件選択中",
+    "customTitle": "その他のアレルギーキーワード",
+    "customHint": "標準22種にない材料を入力してください。システムが判定できなくても質問カードには必ず含まれます。",
+    "customPlaceholder": "例: ごま油",
+    "customAdd": "追加",
+    "customEmpty": "追加されたキーワードはありません。",
+    "customRemove": "{keyword}を削除",
+    "customLimit": "キーワードは最大{max}件まで追加できます。",
+    "retentionTitle": "保存期間",
+    "retentionHint": "設定した期間が過ぎると、保存されたアレルギー情報は自動的に削除されます。",
+    "retentionValue": "{days}日",
+    "save": "保存して撮影する",
+    "clear": "保存した情報を削除",
+    "cleared": "保存したアレルギー情報を削除しました。",
+    "emptyWarning": "アレルギーが1つも選択されていません。このまま進むとすべての料理が「確認が必要」と表示され、質問カードは材料の確認のみを依頼します。",
+    "loadFailed": "アレルギー一覧を読み込めませんでした。"
+  },
+  "scan": {
+    "title": "メニューの撮影",
+    "myProfile": "登録したアレルギー",
+    "standardLabel": "標準",
+    "customLabel": "その他",
+    "standardValue": "{count}件選択中",
+    "noneSelected": "選択なし",
+    "remaining": "残り{days}日",
+    "editProfile": "アレルギーを編集",
+    "guideTitle": "メニュー全体が入るように撮影してください",
+    "guideTip1": "四角いガイドの中にメニューを合わせてください。",
+    "guideTip2": "光の反射と手ぶれを避けてください。",
+    "guideTip3": "文字がはっきり見えるか確認してください。",
+    "capture": "メニューを撮影する",
+    "recapture": "もう一度撮影する",
+    "cameraOnlyHint": "撮影した画像は分析にのみ使用され、端末に保存されません。",
+    "analyzing": "メニューを分析しています",
+    "analyzingHint": "料理名を読み取り、材料を確認しています。最大1分ほどかかる場合があります。",
+    "desktopHint": "デスクトップブラウザではカメラではなくファイル選択画面が開きます。実機での確認はモバイル端末で行ってください。"
+  },
+  "result": {
+    "title": "分析結果",
+    "menuCount": "{count}件の料理が見つかりました",
+    "myAllergies": "登録したアレルギー",
+    "myAllergiesNone": "アレルギーが選択されていません。すべての料理が「確認が必要」と表示されます。",
+    "empty": "料理が見つかりませんでした",
+    "emptyHint": "メニュー全体が入るように、もう一度撮影してください。",
+    "rescan": "別のメニューを撮影",
+    "editProfile": "アレルギーを編集",
+    "noResult": "分析結果がありません。メニューをもう一度撮影してください。"
+  },
+  "menu": {
+    "statusDanger": "危険",
+    "statusNeedsCheck": "確認が必要",
+    "statusDangerHint": "登録したアレルギーと一致する材料が含まれています。",
+    "statusNeedsCheckHint": "一致する材料は見つかりませんでしたが、安全という意味ではありません。店員に確認してください。",
+    "conflictTitle": "登録したアレルギーと一致する項目",
+    "conflictBecause": "原因の材料",
+    "ingredientsTitle": "材料",
+    "ingredientsEmpty": "材料情報が見つかりませんでした。店員に直接確認してください。",
+    "detectedTitle": "検出されたアレルギー物質",
+    "detectedEmpty": "検出されたアレルギー物質はありません。安全という意味ではありません。",
+    "sourceTitle": "データの出典",
+    "sourceOfficial": "標準レシピに基づく",
+    "sourceAiGenerated": "AIによる推定",
+    "noticeTitle": "注意",
+    "showToStaff": "店員に見せる"
+  },
+  "questionCard": {
+    "title": "店員に見せる画面",
+    "langKo": "한국어",
+    "langEn": "English",
+    "brightnessHint": "画面の明るさを最大にしてから店員に見せてください。",
+    "close": "閉じる",
+    "opened": "質問カードを開きました。"
+  },
+  "errors": {
+    "INVALID_IMAGE_OR_NOT_MENU": {
+      "title": "メニューを認識できませんでした",
+      "message": "光の反射や手ぶれを避け、四角いガイドに合わせてもう一度撮影してください。",
+      "action": "もう一度撮影する"
+    },
+    "UNSUPPORTED_MEDIA_TYPE": {
+      "title": "対応していない形式です",
+      "message": "JPEG、PNG、WEBP、HEIC画像のみ分析できます。もう一度撮影してください。",
+      "action": "もう一度撮影する"
+    },
+    "IMAGE_TOO_LARGE": {
+      "title": "画像の容量が大きすぎます",
+      "message": "10MB以下になるようもう一度撮影してください。",
+      "action": "もう一度撮影する"
+    },
+    "INVALID_ALLERGY_ID": {
+      "title": "アレルギー情報を再設定してください",
+      "message": "保存されたアレルギー情報がサーバーと一致しません。",
+      "action": "アレルギー設定へ移動"
+    },
+    "AI_TIMEOUT": {
+      "title": "分析に時間がかかっています",
+      "message": "しばらくしてからもう一度お試しください。",
+      "action": "もう一度撮影する"
+    },
+    "AI_PROVIDER_ERROR": {
+      "title": "分析に失敗しました",
+      "message": "しばらくしてからもう一度お試しください。",
+      "action": "もう一度撮影する"
+    },
+    "RATE_LIMITED": {
+      "title": "リクエストが多すぎます",
+      "message": "しばらく待ってからもう一度撮影してください。",
+      "action": "もう一度撮影する"
+    },
+    "NETWORK": {
+      "title": "ネットワークに接続できません",
+      "message": "インターネット接続を確認してからもう一度お試しください。",
+      "action": "もう一度撮影する"
+    },
+    "TIMEOUT": {
+      "title": "応答がタイムアウトしました",
+      "message": "通信状態を確認してからもう一度撮影してください。",
+      "action": "もう一度撮影する"
+    },
+    "UNKNOWN": {
+      "title": "問題が発生しました",
+      "message": "しばらくしてからもう一度お試しください。",
+      "action": "もう一度撮影する"
+    }
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "home": "最初に戻る"
+  }
+}

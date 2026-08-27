@@ -1,0 +1,168 @@
+{
+  "common": {
+    "appName": "K-Food Lens",
+    "close": "关闭",
+    "cancel": "取消",
+    "retry": "重试",
+    "loading": "加载中...",
+    "language": "语言",
+    "skipToContent": "跳到正文"
+  },
+  "safety": {
+    "noticeTitle": "请务必在店内确认",
+    "notice": "本结果仅供参考。同一道菜在不同餐厅、不同做法下用料也不同。本应用不会告诉您某道菜是安全的。用餐前请直接向店员确认。"
+  },
+  "onboarding": {
+    "title": "拍下菜单，查看过敏风险",
+    "subtitle": "拍摄韩国餐厅的菜单，即可查看菜品的食材与致敏物质。",
+    "step1Title": "拍摄菜单",
+    "step1Body": "用相机拍下菜单。",
+    "step2Title": "查看食材",
+    "step2Body": "显示每道菜的食材与致敏物质。",
+    "step3Title": "向店员提问",
+    "step3Body": "把提问卡给店员看，做最终确认。",
+    "limitTitle": "使用前须知",
+    "limitBody": "本应用不做「安全」判定，只区分可能有风险的菜品和仍需确认的菜品。",
+    "consentTitle": "使用前同意事项",
+    "consentAnalysis": "我同意将拍摄的菜单图片发送到服务器进行分析。图片在分析后不会被保存。",
+    "consentLimit": "我已了解本结果不构成医疗建议，用餐前必须直接向店员确认。",
+    "start": "开始使用",
+    "consentRequired": "需要同意以上两项才能继续。"
+  },
+  "profile": {
+    "title": "我的过敏设置",
+    "subtitle": "您的选择仅保存在本设备上，不会上传保存到服务器。",
+    "standardTitle": "22种标准致敏物",
+    "standardHint": "请选择所有符合的项目。",
+    "searchPlaceholder": "搜索致敏物（例如：大豆、soybean）",
+    "searchEmpty": "没有匹配的结果。",
+    "selectedCount": "已选 {count} 项",
+    "customTitle": "其他过敏关键词",
+    "customHint": "请输入22种标准致敏物之外的食材。即使系统无法识别，提问卡上也一定会包含。",
+    "customPlaceholder": "例如：芝麻油",
+    "customAdd": "添加",
+    "customEmpty": "尚未添加关键词。",
+    "customRemove": "删除 {keyword}",
+    "customLimit": "最多可添加 {max} 个关键词。",
+    "retentionTitle": "保存期限",
+    "retentionHint": "超过设定期限后，已保存的过敏信息会自动删除。",
+    "retentionValue": "{days} 天",
+    "save": "保存并拍摄",
+    "clear": "删除已保存的信息",
+    "cleared": "已删除保存的过敏信息。",
+    "emptyWarning": "您尚未选择任何过敏项。若直接继续，所有菜品都会显示为「需确认」，提问卡也只会请店员确认食材。",
+    "loadFailed": "无法加载致敏物列表。"
+  },
+  "scan": {
+    "title": "拍摄菜单",
+    "myProfile": "我的过敏项",
+    "standardLabel": "标准",
+    "customLabel": "其他",
+    "standardValue": "已选 {count} 项",
+    "noneSelected": "未选择",
+    "remaining": "剩余 {days} 天",
+    "editProfile": "修改过敏项",
+    "guideTitle": "请拍下完整的菜单",
+    "guideTip1": "把菜单对准方框引导线。",
+    "guideTip2": "避免反光和手抖。",
+    "guideTip3": "确认文字清晰可见。",
+    "capture": "拍摄菜单",
+    "recapture": "重新拍摄",
+    "cameraOnlyHint": "所拍图片仅用于分析，不会保存在设备上。",
+    "analyzing": "正在分析菜单",
+    "analyzingHint": "正在识别菜名并核对食材，最多可能需要一分钟。",
+    "desktopHint": "在桌面浏览器上会打开文件选择窗口而不是相机。请使用移动设备进行实际验证。"
+  },
+  "result": {
+    "title": "分析结果",
+    "menuCount": "共找到 {count} 道菜",
+    "myAllergies": "我的过敏项",
+    "myAllergiesNone": "未选择过敏项，所有菜品都会显示为「需确认」。",
+    "empty": "未找到菜品",
+    "emptyHint": "请重新拍摄，确保菜单完整入镜。",
+    "rescan": "拍摄其他菜单",
+    "editProfile": "修改过敏项",
+    "noResult": "没有分析结果，请重新拍摄菜单。"
+  },
+  "menu": {
+    "statusDanger": "危险",
+    "statusNeedsCheck": "需确认",
+    "statusDangerHint": "含有与您过敏项一致的食材。",
+    "statusNeedsCheckHint": "未发现一致的食材，但并不代表安全。请向店员确认。",
+    "conflictTitle": "与您过敏项一致的项目",
+    "conflictBecause": "对应食材",
+    "ingredientsTitle": "食材",
+    "ingredientsEmpty": "未找到食材信息，请直接向店员确认。",
+    "detectedTitle": "检出的致敏物质",
+    "detectedEmpty": "未检出致敏物质。这并不代表安全。",
+    "sourceTitle": "数据来源",
+    "sourceOfficial": "依据标准食谱",
+    "sourceAiGenerated": "AI 推测",
+    "noticeTitle": "注意",
+    "showToStaff": "给店员看"
+  },
+  "questionCard": {
+    "title": "给店员看的画面",
+    "langKo": "한국어",
+    "langEn": "English",
+    "brightnessHint": "请把屏幕亮度调到最高后再给店员看。",
+    "close": "关闭",
+    "opened": "已打开提问卡。"
+  },
+  "errors": {
+    "INVALID_IMAGE_OR_NOT_MENU": {
+      "title": "无法识别菜单",
+      "message": "请避免反光和手抖，对准方框引导线重新拍摄。",
+      "action": "重新拍摄"
+    },
+    "UNSUPPORTED_MEDIA_TYPE": {
+      "title": "不支持的格式",
+      "message": "仅支持分析 JPEG、PNG、WEBP、HEIC 图片。请重新拍摄。",
+      "action": "重新拍摄"
+    },
+    "IMAGE_TOO_LARGE": {
+      "title": "图片过大",
+      "message": "请重新拍摄，控制在 10MB 以内。",
+      "action": "重新拍摄"
+    },
+    "INVALID_ALLERGY_ID": {
+      "title": "请重新设置过敏信息",
+      "message": "已保存的过敏信息与服务器不一致。",
+      "action": "前往过敏设置"
+    },
+    "AI_TIMEOUT": {
+      "title": "分析耗时过长",
+      "message": "请稍后再试。",
+      "action": "重新拍摄"
+    },
+    "AI_PROVIDER_ERROR": {
+      "title": "分析失败",
+      "message": "请稍后再试。",
+      "action": "重新拍摄"
+    },
+    "RATE_LIMITED": {
+      "title": "请求过于频繁",
+      "message": "请稍等一会儿后重新拍摄。",
+      "action": "重新拍摄"
+    },
+    "NETWORK": {
+      "title": "无法连接网络",
+      "message": "请检查网络连接后重试。",
+      "action": "重新拍摄"
+    },
+    "TIMEOUT": {
+      "title": "请求超时",
+      "message": "请检查网络状况后重新拍摄。",
+      "action": "重新拍摄"
+    },
+    "UNKNOWN": {
+      "title": "出现问题",
+      "message": "请稍后再试。",
+      "action": "重新拍摄"
+    }
+  },
+  "notFound": {
+    "title": "找不到页面",
+    "home": "返回首页"
+  }
+}
