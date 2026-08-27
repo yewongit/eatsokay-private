@@ -111,6 +111,7 @@ async function importRecipes() {
     database: process.env.DB_DATABASE ?? 'kfood_lens',
     entities: ENTITIES,
     synchronize: true,
+    ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
   });
 
   await dataSource.initialize();
