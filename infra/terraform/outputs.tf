@@ -37,6 +37,7 @@ output "backend_env_file" {
     DB_USERNAME=${var.db_username}
     DB_PASSWORD=${random_password.db_master.result}
     DB_DATABASE=${var.db_name}
+    DB_SSL=true
 
     AWS_REGION=${var.bedrock_region}
     AWS_BEARER_TOKEN_BEDROCK=

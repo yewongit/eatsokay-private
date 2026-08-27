@@ -20,5 +20,7 @@ export function buildTypeOrmConfig(configService: ConfigService): TypeOrmModuleO
     database: configService.get<string>('DB_DATABASE', 'kfood_lens'),
     entities: ENTITIES,
     synchronize: configService.get<string>('NODE_ENV', 'development') !== 'production',
+    // RDS는 기본적으로 SSL 연결을 강제하므로, RDS를 쓸 때만(DB_SSL=true) 켠다. 로컬 docker-compose의 Postgres는 SSL이 없어 꺼둔 채로 둔다.
+    ssl: configService.get<string>('DB_SSL', 'false') === 'true' ? { rejectUnauthorized: false } : false,
   };
 }

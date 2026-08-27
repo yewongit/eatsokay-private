@@ -14,6 +14,12 @@ curl -SL https://github.com/docker/compose/releases/latest/download/docker-compo
   -o "$DOCKER_CONFIG/docker-compose"
 chmod +x "$DOCKER_CONFIG/docker-compose"
 
+# dnf의 docker 패키지에는 buildx가 없거나 너무 낮은 버전이 딸려와서 `docker compose build`가 실패한다 - 최신 버전을 직접 받는다
+BUILDX_VERSION=$(curl -s https://api.github.com/repos/docker/buildx/releases/latest | grep '"tag_name"' | cut -d '"' -f4)
+curl -SL "https://github.com/docker/buildx/releases/download/$${BUILDX_VERSION}/buildx-$${BUILDX_VERSION}.linux-amd64" \
+  -o "$DOCKER_CONFIG/docker-buildx"
+chmod +x "$DOCKER_CONFIG/docker-buildx"
+
 # Nginx: 80번 포트 요청을 백엔드 컨테이너(3000)로 리버스 프록시
 cat > /etc/nginx/conf.d/kfood-lens.conf <<'NGINX'
 server {
